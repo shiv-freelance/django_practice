@@ -1,0 +1,10 @@
+
+
+# while creating the templates always go for app level templates
+1. go to app, create a templates folder and subfolder should be same as app_name
+2. In subfolder, you can create the html files which can be rendered.
+
+
+
+# while creating the base template follow these
+1. create base level html file which can be used in all html files as a super class.
