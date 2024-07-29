@@ -1,0 +1,23 @@
+{% extends "webapp/base.html" %} {% block content %}
+<div class="container bg-light shadow-md p-5">
+  <h3>Create your account</h3>
+  <h5>Start managing your clients today!</h5>
+
+  <hr />
+  <br />
+  <form method="POST" autocomplete="off">
+    {% csrf_token %}
+    <!--it is mandatory field, without this your form will not work. -->
+    {{form.as_p}}
+    <br />
+    <button type="submit" class="btn btn-primary w-100 btn-block p-2">
+      Submit
+    </button>
+  </form>
+  <br>
+  <div class='text-center'>
+    <p> Already have an account? </p> <a href={%url ''%}>Login</a>
+  </div>
+</div>
+
+{% endblock content %}
